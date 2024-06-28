@@ -1,0 +1,62 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.wrapper {
+  width: 80vmin;
+  background: #fff;
+  margin-top: 120px;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.wrapper .tabs {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.wrapper .tabs h3 {
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;font-weight: 600;
+  background: #e4e9fd;
+}
+
+.wrapper .tabs h3.active {
+  background: #fff;
+}
+
+.wrapper .tab-content {
+  padding: 20px;
+}
+.wrapper .tab-content .content {
+  display: none;
+}
+
+.wrapper .tab-content .content.active {
+  display: block;
+}
+
+.wrapper .tab-content h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.wrapper .tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+}
